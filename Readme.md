@@ -7,7 +7,7 @@ Die genaue Aufgabenbeschreibung findest du weiter unten.
 ### Download
 Um die Dateien herunterzuladen, kannst du diese oben bei dem grünen Code Butten als ZIP herunterladen oder über git clonen. Für das Clonen musst du dir git herunterladen (https://git-scm.com/downloads). Dann musst du eine Konsole öffnen und dort hin navigieren, wo du die Dateien haben möchtest und dies eintippen: 
 ```console
-git clone ***
+git clone https://github.com/Draegerwerk/Studium-Angewandte-Informatik---Programmieraufgabe.git
 ```
  Der schnellste Weg eine Konsole zu öffnen ist über die Tastenkombination WIN+R und das Eintippen von "cmd". (https://github.com/git-guides/git-clone) Navigieren in der Konsole kannst du hier lernen <https://riptutorial.com/cmd/example/8646/navigating-in-cmd>. 
 ### NodeJS
@@ -56,7 +56,7 @@ npm run startSim
 Dann sollte sich ein Fenster öffnen, wo du deinen Simulationsaufbau sehen kannst. Falls nicht, versuche die Fehlermeldung zu interpretieren und das Problem zu lösen. Dabei kann für dich auch der Abschnitt Hilfe und Tipps nützlich sein.
 
 ## Abgabe des Programms
-**Todo**
+Um das Programm später benutzen zu können, sende bitte den EnvironmentBuilder.js vor dem nächsten Bewerbungsgespräch zu. Zusätzlich kannst du deinen eigenen Laptop mitbringen und noch andere Möglichkeiten zur Distribution deines Programms verwenden.
 
 ## Hilfe und Tipps
 Falls du kein JavaScript kannst, ist das kein Problem. Auf Seiten wie <https://www.w3schools.com/js/> kann man JavaScript schnell lernen.

@@ -1,0 +1,367 @@
+body{
+  margin: 0px;
+  background-color: #F2F2F2;
+   font-size: 4mm;
+   font-family: Arial !important;
+}
+
+.lightoff {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-color: #434D59;
+  border-radius: 50%;
+  display: inline-block;
+}
+.lightred {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(175, 0, 0);
+  border-color: #434D59;
+  border-radius: 50%;
+  display: inline-block;
+}
+.lightyellow {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(249, 255, 68);
+  border-color: #434D59;
+  border-radius: 50%;
+  display: inline-block;
+}.lightgreen {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(0, 175, 3);
+  border-color: #434D59;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
+
+.connectdiv{
+  display:
+  flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 2.7mm;
+  background-color: white;
+  box-shadow: 0 0.25mm 0.25mm 0 rgb(0 0 0 / 17%);
+  border-bottom-right-radius: 2.1mm;
+  border-bottom-left-radius: 2.1mm;
+  margin-left: 2.1mm;
+  margin-right: 2.1mm;
+  margin-bottom: 2.7mm;
+}
+input#addresInput,
+input#addresInput:focus{
+  min-width:36mm;
+  max-width:87.1mm;
+  background-image: url('search-icon.png');
+  background-position: 9px 10px;
+  background-repeat: no-repeat;
+  padding-left: 50px;  
+  border-radius: 1.2mm;
+  background-color: #DAE2EB;
+  border-style: none;
+  padding: 3.6mm;
+  outline:none;
+  color:#434D59;
+}
+input#addresInput:focus{
+  background-color:#367FD9;
+  color:#ffffff;
+}
+
+input#addresInput:disabled{
+  background-color:#EBF1F7;
+  color:#C5CCD4;
+}
+input#addresInput::placeholder {
+  color: #8091A6;
+}
+
+input#addresInput:focus::placeholder {
+  color: #8091a600;
+}
+input#disconnectButton,
+input#connectButtoninput#disconnectButton,
+input#connectButton{
+  background-color: #DAE2EB;
+  min-height: 6.3mm;
+  min-width: 14.4mm;
+  border-radius: 1.2mm;
+  border-style: none;
+  cursor: pointer;
+  margin: 2.2mm;
+}
+.devicesDiv{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: stretch;
+}
+.expansionAlarmDiv{
+  display:
+  flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.expansionDeviceInfoDiv{
+  display: flex;
+  padding-right: 3%;
+  flex-direction: column;
+}
+.expandedDiv{
+  display:
+  flex;
+  flex-direction: row;
+  box-shadow: 0 0.25mm 0.25mm 0 rgb(0 0 0 / 17%);
+  background-color: white;
+  border-bottom-left-radius: 2.1mm;
+  border-bottom-right-radius: 2.1mm;
+  padding: 2.7mm;
+  /* margin-bottom: 2.7mm; */
+}
+.deviceInfoGroupItem{
+  display:
+  flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.devicesTable{
+  border-collapse: collapse;
+  margin: 2.7mm;
+}
+.deviceNoAlarm,
+.deviceAlarm,
+.deviceAlarmHi,
+.deviceAlarmLo,
+.deviceAlarmMe,
+.deviceAlarmNone,
+.deviceNoAlarmExpanded,
+.deviceAlarmExpanded,
+.deviceAlarmHiExpanded,
+.deviceAlarmLoExpanded,
+.deviceAlarmMeExpanded,
+.deviceAlarmNoneExpanded{
+  background-color: #ffffff00;
+  /* border-top: 1mm solid #5a1f1f00; */
+  border-bottom-right-radius: 2.1mm;
+  border-top-left-radius: 2.1mm;
+  padding: 30px;
+  border-radius: 2.1mm;
+  height: 1px;
+  box-shadow: 0 0.25mm 0.25mm 0 rgb(0 0 0 / 17%);
+}
+.deviceNoAlarm td,
+.deviceAlarm td,
+.deviceAlarmHi td,
+.deviceAlarmLo td,
+.deviceAlarmMe td,
+.deviceAlarmNone td,
+.deviceNoAlarmExpanded td,
+.deviceAlarmExpanded td,
+.deviceAlarmHiExpanded td,
+.deviceAlarmLoExpanded td,
+.deviceAlarmMeExpanded td,
+.deviceAlarmNoneExpanded td{
+  height: inherit;
+}
+
+.deviceNoAlarm td div,
+.deviceAlarm td div,
+.deviceAlarmHi td div,
+.deviceAlarmLo td div,
+.deviceAlarmMe td div,
+.deviceAlarmNone td div,
+.deviceNoAlarmExpanded td div,
+.deviceAlarmExpanded td div,
+.deviceAlarmHiExpanded td div,
+.deviceAlarmLoExpanded td div,
+.deviceAlarmMeExpanded td div,
+.deviceAlarmNoneExpanded td div{
+  height: calc(100% - 8.1mm);
+  margin-top: 2.7mm;
+  padding: 2.7mm;
+}
+.deviceNoAlarm td:first-child div,
+.deviceAlarm td:first-child div,
+.deviceAlarmHi td:first-child div,
+.deviceAlarmLo td:first-child div,
+.deviceAlarmMe td:first-child div,
+.deviceAlarmNone td:first-child div{
+  border-top-left-radius:2.1mm;
+  border-bottom-left-radius:2.1mm;
+}
+
+.deviceNoAlarmExpanded td:first-child div,
+.deviceAlarmExpanded td:first-child div,
+.deviceAlarmHiExpanded td:first-child div,
+.deviceAlarmLoExpanded td:first-child div,
+.deviceAlarmMeExpanded td:first-child div,
+.deviceAlarmNoneExpanded td:first-child div{
+  border-top-left-radius:2.1mm;
+}
+
+.deviceNoAlarm td:last-child div,
+.deviceAlarm td:last-child div,
+.deviceAlarmHi td:last-child div,
+.deviceAlarmLo td:last-child div,
+.deviceAlarmMe td:last-child div,
+.deviceAlarmNone td:last-child div{
+  border-top-right-radius:2.1mm;
+  border-bottom-right-radius:2.1mm;
+}
+
+.deviceNoAlarmExpanded td:last-child div,
+.deviceAlarmExpanded td:last-child div,
+.deviceAlarmHiExpanded td:last-child div,
+.deviceAlarmLoExpanded td:last-child div,
+.deviceAlarmMeExpanded td:last-child div,
+.deviceAlarmNoneExpanded td:last-child div{
+  border-top-right-radius:2.1mm;
+}
+
+.deviceNoAlarm td div,
+.deviceNoAlarmExpanded td div{
+  background-color: #ffffff;
+}
+.deviceAlarm td div,
+.deviceAlarmExpanded td div{
+  background-color: #FFE14D;
+}
+.deviceAlarmHi td div,
+.deviceAlarmHiExpanded td div{
+  background-color:#FF4000;
+}
+.deviceAlarmMe td div,
+.deviceAlarmMeExpanded td div{
+  background-color:#FFE14D;
+}
+.deviceAlarmLo td div,
+.deviceAlarmLoExpanded td div{
+  background-color:#79DEF2;
+}
+.deviceAlarmNone td div
+.deviceAlarmNoneExpanded td div{
+  background-color:#bababa;
+}
+
+.deviceNoAlarm:hover td div,
+.deviceNoAlarmExpanded:hover td div{
+  background-color: #F9FAFD;
+  cursor: pointer;
+}
+.deviceAlarmHi:hover td div,
+.deviceAlarmHiExpanded:hover td div{
+  background-color:#FFE8E1;
+  cursor: pointer;
+}
+.deviceAlarmMe:hover td div,
+.deviceAlarmMeExpanded:hover td div{
+  background-color: #FFF6CC;
+  cursor: pointer;
+}
+
+.deviceAlarmLo:hover td div,
+.deviceAlarmLoExpanded:hover td div{
+  background-color:#E0F4F8;
+  cursor: pointer;
+}
+
+
+td{
+  text-align: center;
+  padding: 0mm;
+  flex-direction: row;
+  justify-content: center;
+}
+.deviceInfoLabel{
+  width: max-content;
+}
+.deviceInfoValue{
+  width: max-content;
+}
+.alarmDescription{
+  background-color: #FFE14D;
+  outline: 2px solid #8C9CAC;
+}
+.alarmDescriptionHi{
+  background-color: #FF4000;
+  outline: 2px solid #8C9CAC;
+}
+.alarmDescriptionMe{
+  background-color: #FFE14D;
+  outline: 2px solid #8091A6;
+}
+.alarmDescriptionLo{
+  background-color: #79DEF2;
+  outline: 2px solid #8C9CAC;
+}
+.alarmDescriptionNone{
+  background-color: #858585;
+  outline: 2px solid #8C9CAC;
+}
+
+.alarmAlarmDiv,
+.alarmNoAlarmDiv,
+.alarmAlarmDivHi,
+.alarmAlarmDivMe,
+.alarmAlarmDivLo,
+.alarmAlarmDivNone{
+  display:
+  flex;
+  border: 1.2mm solid #8091A6;
+  border-radius: 1.2mm;
+  background-color: #ffffff;
+  flex-direction: column;
+  margin: 0.8mm;
+  box-shadow: 0 0.25mm 0.25mm 0 rgb(0 0 0 / 17%);
+}
+.alarmAlarmDiv{
+  background-color: #FFE14D;
+}
+.alarmAlarmDivHi{
+  background-color: #FF4000;
+}
+.alarmAlarmDivMe{
+  background-color: #FFE14D;
+}
+.alarmAlarmDivLo{
+  background-color: #79DEF2;
+}
+.alarmAlarmDivNone{
+  background-color: #727272;
+}
+
+.seperator{
+    width: 100%;
+    border-top: 1.2mm dashed #8091A6;
+}
+
+.loader {
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #3498db;
+    width: 13px;
+    height: 13px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

@@ -1,0 +1,21 @@
+{
+  "name": "bewerbungsaufgabe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ElectronDependencies/main.js",
+  "scripts": {
+    "startSim": "electron ./ElectronDependencies/main.js",
+    "start": "node ./ArduinoDependencies/arduinoStart.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^2.1.0",
+    "node": "^18.11.0",
+    "serialport": "^8.0.5"
+  },
+  "devDependencies": {
+    "electron": "^19.0.4"
+  }
+}
